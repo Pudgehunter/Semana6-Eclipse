@@ -120,9 +120,8 @@ public class Main extends PApplet {
 		new Thread(
 				() -> {
 					try {
-						writer.write(msg);
-						writer.flush();
-						
+						 writer.write(msg+"\n");
+	                     writer.flush();
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
